@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/skins/color-1.css">
+    <link rel="stylesheet" href="src/css/color-change/color-change.css">
+    <link rel="stylesheet" href="src/css/vars.css">
+    <link rel="stylesheet" href="src/css/style-switcher.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="src/css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="src/css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="src/css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="src/css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="src/css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
+</head>
+<body>
+<div class="main-container">  
+    <div class="aside">
+        <div class="logo">
+            <a href="#"><span>N</span>ick</a>
+        </div>
+        <div class="nav-toggler">
+            <span></span>
+        </div>
+        <div class="navbar">
+            <ul>
+                <li><a href="#home" class="links active"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#about" class="links"><i class="fa fa-user"></i> O mně</a></li>
+                <li><a href="#services" class="links"><i class="fa fa-list"></i> Služby</a></li>
+                <li><a href="#method" class="links"><i class="fa-solid fa-list-check"></i>Postup</a></li>
+                <li><a href="#portfolio" class="links"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+                <li><a href="#contact" class="links"><i class="fa fa-comments"></i> Kontakt</a></li>
+            </ul>
+        </div>
+
+
+    </div>
+    <div class="main">
+        <section class="section-home section" id="home">
+            <div class="container">
+                <div class="row">
+                    <div class="home-info">
+                        <h3 class="Hello ">Ahoj, moje jméno je <span class="name">Nicolas</span></h3>
+                        <h3 class="proffesion">Jsem <span class="web-developer">Web Developer</span></h3>
+                        <p>Jsem začínající web developer. Zaměřuji se na vytváření webu, jeho design a následné přetvoření do kódu.</p>
+                        <a href="#about" class="btn">Více o mně</a>
+                    </div>
+                    <div class="home-image">
+                        <img src="img/profil.jpg" alt="me">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-title">
+                        <h2>O mně</h2>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <div class="row">
+                        <div class="about-text">
+                            <h3>Jsem Nicolas Melda<span> - Web Developer</span></h3>
+                            <p>Je mi <span>19 let</span> a studuji posledním rokem na <span>gymnáziu ve Vysokém Mýtě</span>, dále chci pokračovat na Vysokou školu, kde se chci nadále rozvíjet v oblasti <span>informatiky</span> a konkrétně v <span>programování webových stránek</span>. Programuji weby podle vašeho přání, responzivita a kvalitní vzhled je základem každého dobrého podnikaní a já jsem připravený vám splnit jakékoliv přání v tomto oboru.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="personal-info">
+                            <div class="row">
+                                <div class="info-item">
+                                    <p>Datum narození: <span>6. listopadu 2003</span></p>
+                                </div>
+                                <div class="info-item">
+                                    <p>Věk: <span>19</span></p>
+                                </div>
+                                <div class="info-item">
+                                   <a href="mailto:nicolas.melda@icloud.com"><p>E-mail: <span class="diff">nicolas.melda@icloud.com</span></p></a> 
+                                </div>
+                                <div class="info-item">
+                                    <a href="tel:+420606047025"><p>Kontakt: <span class="diff"> +420 606 047 025</span></p></a>
+                                </div>
+                                <div class="info-item">
+                                    <p>Město: <span>Vysoké Mýto</span></p>
+                                </div>
+                                <div class="info-item">
+                                    <p>Freelance: <span>dostupný</span></p>
+                                </div>
+                            </div> 
+                            <div class="row">
+                                <div class="buttons">
+                                    <a href="životopis/Životopis.pdf" download="životopis" class="btn">Stáhnout životopis</a>
+                                    <a href="#contact" class="btn-hire__me">Najměte si mě</a>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="skills">
+                            <div class="row">
+                                <div class="skill-item">
+                                    <h5>CSS</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 80% ;"></div>
+                                        <div class="skill-percent">80%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <h5>Sass</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 85% ;"></div>
+                                        <div class="skill-percent">85%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <h5>Html</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 75% ;"></div>
+                                        <div class="skill-percent">75%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <h5>Js</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 50% ;"></div>
+                                        <div class="skill-percent">50%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <h5>Jquery</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 60% ;"></div>
+                                        <div class="skill-percent">60%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="services section" id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="services-title">
+                        <h2>Služby</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="service-item">
+                        <div class="service-item__inner">
+                            <div class="icon">
+                                <i class="fa fa-comment-dots"></i>
+                            </div>
+                            <h4>Konzultace zdarma</h4>
+                            <p>Konzultace před každým projektem samozřejmě zdarma</p>
+                        </div>
+                    </div>
+                    <div class="service-item">
+                            <div class="service-item__inner">
+                                <div class="icon">
+                                    <i class="fa fa-palette"></i>
+                                </div>
+                                <h4>Remake celého webu</h4>
+                                <p>Kompletně předělám celý web + responzivita</p>
+                            </div>
+                    </div>
+                            <div class="service-item">
+                                <div class="service-item__inner">
+                                    <div class="icon">
+                                        <i class="fa fa-code"></i>
+                                    </div>
+                                    <h4>Vytvoření celého nového webu</h4>
+                                    <p>Kompletně vytvořím a nakóduji celý web + responzivita</p>
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="method section" id="method">
+            <div class="container">
+                <div class="row">
+                    <div class="method-title">
+                        <h2>Postup</h2>
+                    </div>
+                    <div class="row">
+                        <div class="method-item">
+                            <div class="icons">
+                                <i class="fa-solid fa-comment"></i>
+                            </div>
+                            <h4>Schůzka s vámi</h4>
+                            <p>Jako první se sejdeme nebo si zavoláme a probereme vše potřebné</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-right "></i>
+                        <div class="method-item">
+                            <div class="icons">
+                                <i class="fa-solid fa-hammer"></i>
+                            </div>
+                            <h4>Přípravná analýza</h4>
+                            <p>Probereme klíčová slova a vytvoříme základní model webu</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <div class="method-item">
+                            <div class="icons">
+                                <i class="fa-solid fa-paint-roller"></i>
+                            </div>
+                            <h4>Grafika</h4>
+                            <p>Vytvořím grafický návrh stránky</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <div class="method-item">
+                            <div class="icons">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+                            <h4>Kódování + programování webu</h4>
+                            <p>Nakóduji a naprogramuji celý web podle vašeho přání</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <div class="method-item">
+                            <div class="icons">
+                                <i class="fa-solid fa-check-to-slot"></i>
+                            </div>
+                            <h4>Otestování</h4>
+                            <p>Otestujeme celý web, jeho funcke a doladíme zbylé chyby</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-right"></i>
+                        <div class="method-item">
+                            <div class="icons">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <h4>Spuštění</h4>
+                            <p>Nakonec spustím celý web a předám vše potřebné ke správě webu</p>
+                        </div>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class=" portfolio section" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="portfolio-title">
+                        <h2>Portfolio</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="portfolio-header">
+                        <h2>Moje poslední projekty: </h2>
+                    </div>
+                </div>
+                <div class="row">
+                <div class="portfolio-item">
+                    <div class="portfolio-item_inner">
+                        <div class="portfolio-itm" id="housefix">
+                            <div class="portfolio-image"><img src="img/druhyweb.png" alt="druhyweb"></div>
+                            <div class="portfolio-text">
+                                <h3 class="text-title">House Fix</h3>
+                                <p class="text-desc">Jedná se pouze o šablonu pro firmu, která se zabývá různými úpravami, opravami a celkově rekonstrukcí.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="portfolio-itm__vyziva" id="vyziva">
+                            <div class="portfolio-image"><img src="img/vyziva.png" alt="vyzivalucie"></div>
+                            <div class="portfolio-text">
+                                <h3 class="text-title__vyziva">Výživové poradenství Lucie</h3>
+                                <p class="text-desc__vyziva">Webové stránky pro začínající a velmi nadějné Výživové poradenství Lucie. V blízké době budu tyto stránky předělávat na lepší, takže je možné, že právě teď nefungují.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact section" id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-title">
+                        <h2>Kontaktujte mě</h2>
+                    </div>
+                </div>
+                <h3 class="contact-question">Máte nějaké otázky a nebo jsem vás zaujmul?</h3>
+                <h4 class="contact-answer">Jsem vám plně k <span>dispozici!</span></h4>
+                <div class="row">
+                    <div class="contact-info__item">
+                        <a href="tel:+420606047025"><div class="contact-icon"><i class="fa fa-phone"></i></div></a>
+                        <h4 class="contact-a"><a href="tel:+420606047025">Zavolejte mi :</a></h4>
+                        <p class="contact-a"><a href="tel:+420606047025">+420 606 047 025</a></p>
+                    </div>
+                    <div class="contact-info__item">
+                        <a href="https://www.linkedin.com/in/nicolas-melda-424b7224b/"><div class="contact-icon"><i class="fa-brands fa-linkedin"></i></div></a>
+                        <h4><a href="https://www.linkedin.com/in/nicolas-melda-424b7224b/">LinkedIn :</a></h4>
+                        <p><a href="https://www.linkedin.com/in/nicolas-melda-424b7224b/">LinkedIn/NicolasMelda</a></p>
+                    </div>
+                    <div class="contact-info__item">
+                        <a href="mailto:nicolas.melda@eicloud.com"><div class="contact-icon"><i class="fa fa-envelope"></i></div></a>
+                        <h4 class="contact-a"><a href="mailto:nicolas.melda@icloud.com">E-mail :</a></h4>
+                        <p class="contact-a"><a href="mailto:nicolas.melda@icloud.com">nicolas.melda@icloud.com</a></p>
+                    </div>
+                </div>
+                <h3 class="contact-question">Pošlete mi E-mail</h3>
+                <h4 class="contact-answer">Odpovídám do hodiny</h4>
+                <div class="row">
+                    <form action="https://formsubmit.co/nicolas.melda@icloud.com" method="post">
+                    <div class="contact-form">
+                        <div class="row">
+                            <div class="contact-item col-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="Jméno" placeholder="Jméno" required>
+                                </div>
+                            </div>
+                            <div class="contact-item col-6">
+                                <div class="form-group">
+                                    <input type="email" class="form-control" name="Email" placeholder="E-mail" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="contact-item col-12">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" name="Předmět" placeholder="Předmět" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="contact-item col-12">
+                                <div class="form-group">
+                                    <textarea class="form-control" id="" name="textarea" placeholder="Zpráva"></textarea required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="contact-item col-12">
+                                <div class="form-group">
+                                    <button type="submit" class="btn-message"> Poslat zprávu</button>
+                                    <input type="hidden" name="_next" value="https://nicolasmelda.cz/thanks.html">
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+<div id="style-switcher" class="style-switcher">
+    <div id="style-w" class="style-switcher__toggler s-icon">
+        <i class="fas fa-cog fa-spin" style="--fa-animation-duration: 8s;"></i>
+    </div>
+    <div class="day-night s-icon">
+        <i class="fas"></i>
+    </div>
+    <h4>Theme Colors</h4>
+    <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+    </div>
+</div>
+<a href="https://calendly.com/nicolas-melda/meeting"><button class="btn meeting">Domluvit schůzku</button></a>
+
+
+    <div class="modal" id="housefixmodal">
+        <div class="modal-dialog">
+            <button class="modal-dialog__close" id="houseclose">&times;</button>
+            <h4 class="modal-dialog__title">House Fix</h4>
+            <img class="modal-dialog__image" src="img/landingpage-housefix.png" alt="housefix">
+            <p class="modal-dialog__desc">Toto je pouze šablona projektu pro jakoukoliv firmu, která se zabývá rekostrukcí a různými úpravami bytů a domů</p>
+            <div class="buttons" id="buttons">
+                <a class="btn-go" id="go" href="https://nixk25.github.io/build/">Prohlédnout web</a>
+                <a class="btn-want" id="housewant" href="#contact">Chci podobný design</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" id="vyzivamodal">
+        <div class="modal-dialog">
+            <button class="modal-dialog__close" id="vyzivaclose">&times;</button>
+            <h4 class="modal-dialog__title">Výživové poradenství Lucie</h4>
+            <img class="modal-dialog__image" src="img/vyziva.png" alt="vyzivalucie">
+            <p class="modal-dialog__desc">Výživové poradenství Lucie je začínající výživové poradenství, které má obrovský potenciál, a proto jsem se rozhodl tento projekt podpořit</p>
+            <div class="buttons" id="buttons">
+                <a class="btn-go" id="vyzivago" href="https://www.vyzivalucie.cz/">Prohlédnout web</a>
+                <a class="btn-want" id="vyzivawant" href="#contact">Chci podobný design</a>
+            </div>
+        </div>
+    </div>
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+    <script src="js/main.js"></script>
+    <script src="js/style-switcher.js"></script>
+</body>
+</html>
