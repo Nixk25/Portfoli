@@ -54,6 +54,72 @@ body.dark {
   margin: auto;
 }
 
+.overlay {
+  height: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.overlay-closebtn {
+  position: absolute;
+  top: 20px;
+  left: 45px;
+  font-size: 60px;
+}
+.overlay-openbtn {
+  display: none;
+}
+@media (max-width: 1199px) {
+  .overlay-openbtn {
+    top: 20px;
+    left: 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    font-size: 20px;
+  }
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: var(--skin-color);
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {
+    font-size: 20px;
+  }
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    left: 35px;
+  }
+}
 .section-home {
   background: var(--bg-black-900);
   min-height: 100vh;
@@ -156,7 +222,7 @@ ul {
   list-style: none;
 }
 
-.logo-img {
+.logo-img__aside {
   width: 100px;
   height: 100px;
   display: -webkit-box;
@@ -165,6 +231,17 @@ ul {
   margin-bottom: 100px;
   -webkit-box-shadow: 5px 10px 18px #888;
           box-shadow: 5px 10px 18px #888;
+}
+.logo-img__main {
+  display: none;
+}
+@media (max-width: 1199px) {
+  .logo-img__main {
+    display: block;
+    margin: 30px auto 50px;
+    width: 100px;
+    height: 100px;
+  }
 }
 
 .navbar {
@@ -215,9 +292,7 @@ ul {
 }
 @media (max-width: 1199px) {
   .nav-toggler {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: none;
   }
   .nav-toggler.open {
     left: 300px;
@@ -1568,7 +1643,7 @@ form {
 }
 
 .meeting {
-  top: 750px;
+  top: 700px;
   right: 0;
   position: fixed;
   opacity: 0.8;

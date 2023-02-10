@@ -36,6 +36,64 @@ body
     max-width: 1440px
     width: 96%
     margin: auto
+
+
+.overlay
+        height: 0
+        width: 100%
+        position: fixed
+        z-index: 1
+        left: 0
+        top: 0
+        background-color: rgb(0,0,0)
+        background-color: rgba(0,0,0, 0.9)
+        overflow-x: hidden
+        transition: 0.5s
+        &-content
+            position: relative
+            top: 25%
+            width: 100%
+            text-align: center
+            margin-top: 30px
+        &-closebtn
+            position: absolute
+            top: 20px
+            left: 45px
+            font-size: 60px
+        &-openbtn
+            display: none
+            @media (max-width: 1199px)
+                top: 20px
+                left: 45px
+                display: flex
+                position: fixed
+                z-index: 1
+                font-size: 20px
+  
+
+.overlay a 
+  padding: 8px
+  text-decoration: none
+  font-size: 36px
+  color: #818181
+  display: block
+  transition: 0.3s
+
+
+
+.overlay a:hover, .overlay a:focus 
+  color: $skin-color
+
+
+@media screen and (max-height: 450px) 
+  .overlay a 
+    font-size: 20px
+  .overlay .closebtn 
+    font-size: 40px
+    top: 15px
+    left: 35px
+  
+
     
    
 
@@ -111,11 +169,19 @@ ul
     
 .logo
     &-img 
-        width: 100px
-        height: 100px
-        display: flex
-        margin-bottom: 100px
-        box-shadow: 5px 10px 18px #888
+        &__aside
+            width: 100px
+            height: 100px
+            display: flex
+            margin-bottom: 100px
+            box-shadow: 5px 10px 18px #888
+        &__main
+            display: none
+            @media (max-width: 1199px)
+                display: block
+                margin: 30px auto 50px
+                width: 100px
+                height: 100px
 .navbar
     margin-top: 50px
     li 
@@ -149,7 +215,7 @@ ul
         @media (max-width: 769px)
             display: none
         @media (max-width: 1199px)
-            display: flex
+            display: none
             &.open
                 left: 300px 
                 transition: all 0.5s ease 
@@ -1142,7 +1208,7 @@ form
         padding: 10px 38px
          
 .meeting
-    top: 750px
+    top: 700px
     right: 0
     position: fixed
     opacity: 0.8
