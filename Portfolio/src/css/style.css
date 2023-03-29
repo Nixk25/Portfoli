@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Poppins:wght@200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 :root {
   --bg-black-900:#f2f2fc;
   --bg-black-100:#fdf9ff;
@@ -120,6 +121,23 @@ body.dark {
     left: 35px;
   }
 }
+
+.logo{
+  margin-bottom: 200px;
+}
+
+.logo a {
+  color: var(--text-black-900);
+  font-size: 40px;
+}
+
+.logo span{
+  font-family: "Sacramento", sans-serif;
+  color: var(--skin-color);
+  font-size: 50px;
+}
+
+
 .section-home {
   background: var(--bg-black-900);
   min-height: 100vh;
@@ -222,27 +240,6 @@ ul {
   list-style: none;
 }
 
-.logo-img__aside {
-  width: 100px;
-  height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 100px;
-  -webkit-box-shadow: 5px 10px 18px #888;
-          box-shadow: 5px 10px 18px #888;
-}
-.logo-img__main {
-  display: none;
-}
-@media (max-width: 1199px) {
-  .logo-img__main {
-    display: block;
-    margin: 30px auto 50px;
-    width: 100px;
-    height: 100px;
-  }
-}
 
 .navbar {
   margin-top: 50px;
@@ -1109,18 +1106,7 @@ form {
   left: 0;
   margin-top: 8px;
 }
-.portfolio-header {
-  padding-left: 15px;
-  padding-right: 15px;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%;
-  max-width: 100%;
-}
-.portfolio-header h2 {
-  color: var(--text-black-900);
-  font-weight: 500;
-}
+
 .portfolio-item {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
@@ -1222,7 +1208,6 @@ form {
   font-size: 30px;
 }
 .text-desc {
-  margin-top: 100px;
   font-size: 19px;
 }
 @media (max-width: 769px) {
@@ -1240,6 +1225,7 @@ form {
 .text-desc__vyziva {
   margin-top: 26px;
   padding-right: 4px;
+  font-size: 19px;
 }
 @media (max-width: 426px) {
   .text-desc__vyziva {
@@ -1423,6 +1409,9 @@ form {
     padding-top: -20px;
   }
 }
+
+
+
 .form-control:focus {
   -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
           box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
@@ -1542,6 +1531,20 @@ form {
 .modal-dialog img {
   width: 100%;
 }
+
+.housefix{
+  border: 2px solid #ffd200;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+.vyziva{
+  border: 2px solid #FFC8E4;
+  border-radius: 20px;
+  padding: 5px;
+}
+
+
 .modal-dialog__desc {
   margin-top: 20px;
 }

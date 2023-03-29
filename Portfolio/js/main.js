@@ -64,9 +64,6 @@ window.addEventListener("scroll", activeMenu);
 var houseFix = document.querySelector("#housefix");
 var Housemodal = document.querySelector("#housefixmodal");
 var houseclose = document.querySelector("#houseclose");
-var vyziva = document.querySelector("#vyziva");
-var vyzivamodal =  document.querySelector("#vyzivamodal");
-var vyzivaclose = document.querySelector("#vyzivaclose");
 
 houseFix.addEventListener("click", function(){
     Housemodal.classList.add("modal_active");
@@ -77,7 +74,25 @@ houseclose.addEventListener("click", function(){
 });
 
 
-var go = document.querySelector("#go");
+window.addEventListener("click", function(e){
+    if (e.target == Housemodal ){
+        Housemodal.classList.remove("modal_active")
+    }
+})
+
+document.addEventListener("keydown", function(e) {
+    if (e.key == "Escape") {
+        Housemodal.classList.remove("modal_active")
+    }
+})
+
+window.addEventListener("scroll", function(e){
+    if (Housemodal.classList.contains("modal_active")) {
+        Housemodal.classList.remove("modal_active")
+    }
+})
+
+//tlačítko
 var housewant = document.querySelector("#housewant");
 
 
@@ -87,6 +102,11 @@ housewant.addEventListener("click", function(){
 
 
 //vyziva lucie
+var vyziva = document.querySelector("#vyziva");
+var vyzivamodal =  document.querySelector("#vyzivamodal");
+var vyzivaclose = document.querySelector("#vyzivaclose");
+
+
 vyziva.addEventListener("click", function(){
     vyzivamodal.classList.add("modal_active");
 });
@@ -95,8 +115,26 @@ vyzivaclose.addEventListener("click", function(){
     vyzivamodal.classList.remove("modal_active");
 });
 
+window.addEventListener("click", function(e){
+    if (e.target == vyzivamodal ){
+        vyzivamodal.classList.remove("modal_active")
+    }
+})
 
-var go = document.querySelector("#go");
+document.addEventListener("keydown", function(e) {
+    if (e.key == "Escape") {
+        vyzivamodal.classList.remove("modal_active")
+    }
+})
+
+window.addEventListener("scroll", function(e){
+    if (vyzivamodal.classList.contains("modal_active")) {
+        vyzivamodal.classList.remove("modal_active")
+    }
+})
+
+
+//tlačítko
 var vyzivawant = document.querySelector("#vyzivawant");
 
 

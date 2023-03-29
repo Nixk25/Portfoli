@@ -40,6 +40,11 @@
   text-transform: capitalize;
 }
 
+.color{
+  display: flex;
+  justify-content: center;
+}
+
 .colors {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -92,4 +97,4 @@
 }
 .s-icon i {
   line-height: 38px;
-}/*# sourceMappingURL=style-switcher.css.map */
+}
