@@ -175,6 +175,38 @@ window.addEventListener("scroll", function(e){
     }
 })
 
+//food generator
+var food = document.querySelector("#foodgenerator");
+var foodmodal =  document.querySelector("#foodmodal");
+var foodclose = document.querySelector("#foodclose");
+
+
+food.addEventListener("click", function(){
+    foodmodal.classList.add("modal_active");
+});
+
+foodclose.addEventListener("click", function(){
+    foodmodal.classList.remove("modal_active");
+});
+
+window.addEventListener("click", function(e){
+    if (e.target == foodmodal ){
+        foodmodal.classList.remove("modal_active")
+    }
+})
+
+document.addEventListener("keydown", function(e) {
+    if (e.key == "Escape") {
+        foodmodal.classList.remove("modal_active")
+    }
+})
+
+window.addEventListener("scroll", function(e){
+    if (foodmodal.classList.contains("modal_active")) {
+        foodmodal.classList.remove("modal_active")
+    }
+})
+
 
 
 function openNav() {
