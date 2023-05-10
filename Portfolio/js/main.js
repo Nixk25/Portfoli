@@ -143,6 +143,40 @@ vyzivawant.addEventListener("click", function(){
 });
 
 
+//snake
+var snake = document.querySelector("#hadik");
+var snakemodal =  document.querySelector("#snakemodal");
+var snakeclose = document.querySelector("#snakeclose");
+
+
+snake.addEventListener("click", function(){
+    snakemodal.classList.add("modal_active");
+});
+
+snakeclose.addEventListener("click", function(){
+    snakemodal.classList.remove("modal_active");
+});
+
+window.addEventListener("click", function(e){
+    if (e.target == snakemodal ){
+        snakemodal.classList.remove("modal_active")
+    }
+})
+
+document.addEventListener("keydown", function(e) {
+    if (e.key == "Escape") {
+        snakemodal.classList.remove("modal_active")
+    }
+})
+
+window.addEventListener("scroll", function(e){
+    if (snakemodal.classList.contains("modal_active")) {
+        snakemodal.classList.remove("modal_active")
+    }
+})
+
+
+
 function openNav() {
     document.getElementById("myNav").style.height = "100%";
   }
